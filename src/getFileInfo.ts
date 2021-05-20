@@ -5,7 +5,7 @@ import { createPromiseApi } from './utils/createPromiseApi';
  */
 export default function getFileInfo(options: { apFilePath: string; digestAlgorithm?: 'md5' | 'sha1' }): Promise<{
   size: number;
-  digest: string;
+  createTime: number;
 }> {
   return createPromiseApi('getFileInfo')(options);
 }

@@ -55,3 +55,35 @@ alert({ title: '你好', content: '我是个demo', buttonText: 'OK' });
 | saveImage       | [my.saveImage](https://miniapp.open.taobao.com/docV3.htm?spm=a219a.15212435.0.0.3424669aGpaxl6&docId=952&docType=20&tag=dev)     | 保存图片     |
 | previewImage    | [my.previewImage](https://miniapp.open.taobao.com/docV3.htm?spm=a219a.15212435.0.0.3424669aGpaxl6&docId=951&docType=20&tag=dev)  | 预览图片     |
 | my.getImageInfo | [my.getImageInfo](https://miniapp.open.taobao.com/docV3.htm?spm=a219a.15212435.0.0.3424669aGpaxl6&docId=954&docType=20&tag=dev)  | 获取图片信息 |
+
+#### 网络
+
+| 方法名       | api 名称                                                                                                                        | 功能说明 |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------- | -------- |
+| downloadFile | [my.downloadFile](https://miniapp.open.taobao.com/docV3.htm?spm=a219a.15212435.0.0.24a6669as85Y7D&docId=971&docType=20&tag=dev) | 文件下载 |
+
+#### 文件
+
+| 方法名         | api 名称                                                                                                                       | 功能说明       |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------ | -------------- |
+| getFileInfo    | [my.getFileInfo](https://miniapp.open.taobao.com/docV3.htm?spm=a219a.15212435.0.0.24a6669as85Y7D&docId=891&docType=20&tag=dev) | 获取文件信息   |
+| chooseFile     | [my.qn.chooseFile](https://miniapp.open.taobao.com/docV3.htm?spm=a219a.15212435.0.0.24a6669as85Y7D&docId=1722&docType=20)      | 选择文件       |
+| saveFileToDisk | [my.qn.saveFileToDisk](https://miniapp.open.taobao.com/docV3.htm?spm=a219a.15212435.0.0.24a6669as85Y7D&docId=1846&docType=20)  | 保存文件到磁盘 |
+
+#### 用户授权
+
+| 方法名    | api 名称                                                                                                                     | 功能说明     |
+| --------- | ---------------------------------------------------------------------------------------------------------------------------- | ------------ |
+| authorize | [my.authorize](https://miniapp.open.taobao.com/docV3.htm?spm=a219a.15212435.0.0.24a6669as85Y7D&docId=988&docType=20&tag=dev) | 发起用户授权 |
+
+#### 打开千牛组件
+
+| 方法名     | api 名称                                                                                                               | 功能说明 |
+| ---------- | ---------------------------------------------------------------------------------------------------------------------- | -------- |
+| openPlugin | [my.openPlugin](https://miniapp.open.taobao.com/docV3.htm?spm=a219a.15212435.0.0.24a6669as85Y7D&docId=1314&docType=20) | 打开插件 |
+
+#### 小程序跳转
+
+| 方法名                | api 名称                                                                                                                              | 功能说明         |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
+| navigateToMiniProgram | [navigateToMiniProgram](https://miniapp.open.taobao.com/docV3.htm?spm=a219a.15212435.0.0.24a6669as85Y7D&docId=985&docType=20&tag=dev) | 跳转到其他小程序 |
