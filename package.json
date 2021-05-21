@@ -1,6 +1,6 @@
 {
   "name": "tb-pc-api",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "使用 Ts 重新定义淘宝PC小程序的api, 并将其改成 Promise 形式",
   "scripts": {
     "commit": "git-cz",
