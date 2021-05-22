@@ -1,3 +1,11 @@
+// 应用级事件
+import onAppShow from './onAppShow';
+import offAppShow from './offAppShow';
+import onAppHide from './onAppHide';
+import offAppHide from './offAppHide';
+import onError from './onError';
+import offError from './offError';
+import onWindowResized from './onWindowResized';
 // 交互反馈
 import alert from './alert';
 import confirm from './confirm';
@@ -120,7 +128,15 @@ import getExtConfig from './getExtConfig';
 import getExtConfigSync from './getExtConfigSync';
 
 export {
-  //交互反馈
+  // 应用级事件
+  onAppShow,
+  offAppShow,
+  onAppHide,
+  offAppHide,
+  onError,
+  offError,
+  onWindowResized,
+  // 交互反馈
   alert,
   confirm,
   showToast,
