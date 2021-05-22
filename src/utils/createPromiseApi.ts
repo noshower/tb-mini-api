@@ -8,7 +8,7 @@ export function createPromiseApi<T = unknown>(api: string, defaultValue = {}): R
   try {
     assertCanIUse(api);
     const [firstPath, secondPath] = api.split('.');
-    const invoke = firstPath === 'qn' ? my.qn[secondPath] : my[firstPath];
+    const invoke = secondPath ? my[firstPath][secondPath] : my[firstPath];
     return (options: any) =>
       new Promise((resolve, reject) => {
         invoke({

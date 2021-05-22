@@ -1,6 +1,6 @@
 /**
  * 自定义分析数据的上报接口
  */
-export default function reportAnalytics(options: { eventName?: string; data: any }): Promise<void> {
-  return my.reportAnalytics(options);
+export default function reportAnalytics(eventName: string, data: unknown): Promise<{ success: boolean }> {
+  return my.reportAnalytics(eventName, data);
 }

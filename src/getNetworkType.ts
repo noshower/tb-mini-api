@@ -5,7 +5,8 @@ import { createPromiseApi } from './utils/createPromiseApi';
  */
 export default function getNetworkType(): Promise<{
   networkAvailable: boolean;
-  networkType: 'UNKNOWN' | 'NOTREACHABLE' | 'WIFI' | '3G' | '2G' | '4G' | 'WWAN';
+  isConnected: boolean;
+  networkType: string;
 }> {
   return createPromiseApi('getNetworkType')();
 }

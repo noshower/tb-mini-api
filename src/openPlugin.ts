@@ -11,6 +11,6 @@ export default function openPlugin(options: {
   directPage?: string;
   pageName?: string;
   directUrl: string;
-}): Promise<void> {
+}): Promise<{ success: boolean }> {
   return createPromiseApi('qn.openPlugin')(options);
 }

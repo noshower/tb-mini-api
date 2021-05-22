@@ -7,6 +7,6 @@ export default function showToast(options?: {
   content?: string;
   type?: 'success' | 'fail' | 'exception' | 'none';
   duration?: number;
-}): Promise<void> {
+}): Promise<{ success: boolean }> {
   return createPromiseApi('showToast')(options);
 }
