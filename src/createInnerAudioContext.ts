@@ -1,3 +1,5 @@
+import invokeSyncApi from './utils/invokeSyncApi';
+
 type F = () => void;
 /**
  * 创建音频
@@ -30,5 +32,5 @@ export default function createInnerAudioContext(): {
   onSeeking: F;
   onSeeked: F;
 } {
-  return my.createInnerAudioContext();
+  return invokeSyncApi('createInnerAudioContext');
 }

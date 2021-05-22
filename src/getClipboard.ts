@@ -1,8 +1,8 @@
-import { createPromiseApi } from './utils/createPromiseApi';
+import invokeAsyncApi from './utils/invokeAsyncApi';
 
 /**
  * 获取剪贴板数据
  */
 export default function getClipboard(): Promise<{ text: string }> {
-  return createPromiseApi('getClipboard')();
+  return invokeAsyncApi('getClipboard');
 }

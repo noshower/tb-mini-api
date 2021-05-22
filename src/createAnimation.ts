@@ -1,3 +1,5 @@
+import invokeSyncApi from './utils/invokeSyncApi';
+
 interface ICreateAnimationOptions {
   /**
    * 动画的持续时间，单位 ms，默认值 400
@@ -173,5 +175,5 @@ export default function createAnimation(options?: {
   delay?: number;
   transformOrigin?: string;
 }): IAnimation {
-  return my.createAnimation(options);
+  return invokeSyncApi('createAnimation', options);
 }

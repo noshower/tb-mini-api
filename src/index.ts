@@ -1,283 +1,155 @@
 // 应用级事件
-import onAppShow from './onAppShow';
-import offAppShow from './offAppShow';
-import onAppHide from './onAppHide';
-import offAppHide from './offAppHide';
-import onError from './onError';
-import offError from './offError';
-import onWindowResized from './onWindowResized';
+export { default as onAppShow } from './onAppShow';
+export { default as offAppShow } from './offAppShow';
+export { default as onAppHide } from './onAppHide';
+export { default as offAppHide } from './offAppHide';
+export { default as onError } from './onError';
+export { default as offError } from './offError';
+export { default as onWindowResized } from './onWindowResized';
 
 // 路由
-import switchTab from './switchTab';
-import reLaunch from './reLaunch';
-import redirectTo from './redirectTo';
-import navigateTo from './navigateTo';
-import navigateBack from './navigateBack';
-import navigateToWebPage from './navigateToWebPage';
-import navigateToQAP from './navigateToQAP';
-import closeQAP from './closeQAP';
+export { default as switchTab } from './switchTab';
+export { default as reLaunch } from './reLaunch';
+export { default as redirectTo } from './redirectTo';
+export { default as navigateTo } from './navigateTo';
+export { default as navigateBack } from './navigateBack';
+export { default as navigateToWebPage } from './navigateToWebPage';
+export { default as navigateToQAP } from './navigateToQAP';
+export { default as closeQAP } from './closeQAP';
 
 // TabBar
-import showTabBar from './showTabBar';
-import hideTabBar from './hideTabBar';
-import setTabBarItem from './setTabBarItem';
-import showTabBarRedDot from './showTabBarRedDot';
-import hideTabBarRedDot from './hideTabBarRedDot';
-import setTabBarBadge from './setTabBarBadge';
-import removeTabBarBadge from './removeTabBarBadge';
-import switchTabEx from './switchTabEx';
-import showTabEx from './showTabEx';
-import hideTabEx from './hideTabEx';
-import showTabBarRedDotEx from './showTabBarRedDotEx';
-import hideTabBarRedDotEx from './hideTabBarRedDotEx';
-import setTabBarBadgeEx from './setTabBarBadgeEx';
-import removeTabBarBadgeEx from './removeTabBarBadgeEx';
+export { default as showTabBar } from './showTabBar';
+export { default as hideTabBar } from './hideTabBar';
+export { default as setTabBarItem } from './setTabBarItem';
+export { default as showTabBarRedDot } from './showTabBarRedDot';
+export { default as hideTabBarRedDot } from './hideTabBarRedDot';
+export { default as setTabBarBadge } from './setTabBarBadge';
+export { default as removeTabBarBadge } from './removeTabBarBadge';
+export { default as switchTabEx } from './switchTabEx';
+export { default as showTabEx } from './showTabEx';
+export { default as hideTabEx } from './hideTabEx';
+export { default as showTabBarRedDotEx } from './showTabBarRedDotEx';
+export { default as hideTabBarRedDotEx } from './hideTabBarRedDotEx';
+export { default as setTabBarBadgeEx } from './setTabBarBadgeEx';
+export { default as removeTabBarBadgeEx } from './removeTabBarBadgeEx';
 
 // 交互反馈
-import alert from './alert';
-import confirm from './confirm';
-import showToast from './showToast';
-import hideToast from './hideToast';
-import showLoading from './showLoading';
-import hideLoading from './hideLoading';
+export { default as alert } from './alert';
+export { default as confirm } from './confirm';
+export { default as showToast } from './showToast';
+export { default as hideToast } from './hideToast';
+export { default as showLoading } from './showLoading';
+export { default as hideLoading } from './hideLoading';
 
 // 动画
-import createAnimation from './createAnimation';
+export { default as createAnimation } from './createAnimation';
 
 // 画布
-import createCanvasContext from './createCanvasContext';
+export { default as createCanvasContext } from './createCanvasContext';
 
 // 图片
-import chooseImage from './chooseImage';
-import compressImage from './compressImage';
-import saveImage from './saveImage';
-import previewImage from './previewImage';
-import getImageInfo from './getImageInfo';
+export { default as chooseImage } from './chooseImage';
+export { default as compressImage } from './compressImage';
+export { default as saveImage } from './saveImage';
+export { default as previewImage } from './previewImage';
+export { default as getImageInfo } from './getImageInfo';
 
 // 视频
-import createVideoContext from './createVideoContext';
+export { default as createVideoContext } from './createVideoContext';
 
 // 音频
-import createInnerAudioContext from './createInnerAudioContext';
+export { default as createInnerAudioContext } from './createInnerAudioContext';
 
 // 数据库
-import queryDBSize from './queryDBSize';
-import database from './database';
-import onDatabaseLimitWarning from './onDatabaseLimitWarning';
-import onDatabaseLimitDebug from './onDatabaseLimitDebug';
+export { default as queryDBSize } from './queryDBSize';
+export { default as database } from './database';
+export { default as onDatabaseLimitWarning } from './onDatabaseLimitWarning';
+export { default as onDatabaseLimitDebug } from './onDatabaseLimitDebug';
 
 // 文件
-import getFileInfo from './getFileInfo';
-import saveFile from './saveFile';
-import getSavedFileInfo from './getSavedFileInfo';
-import getSavedFileList from './getSavedFileList';
-import removeSavedFile from './removeSavedFile';
+export { default as getFileInfo } from './getFileInfo';
+export { default as saveFile } from './saveFile';
+export { default as getSavedFileInfo } from './getSavedFileInfo';
+export { default as getSavedFileList } from './getSavedFileList';
+export { default as removeSavedFile } from './removeSavedFile';
 
-import chooseFile from './chooseFile';
-import chooseFileAndGetContent from './chooseFileAndGetContent';
-import saveFileToDisk from './saveFileToDisk';
+export { default as chooseFile } from './chooseFile';
+export { default as chooseFileAndGetContent } from './chooseFileAndGetContent';
+export { default as saveFileToDisk } from './saveFileToDisk';
 
 // 缓存
-import clearStorage from './clearStorage';
-import clearStorageSync from './clearStorageSync';
-import getStorage from './getStorage';
-import getStorageInfo from './getStorageInfo';
-import getStorageInfoSync from './getStorageInfoSync';
-import getStorageSync from './getStorageSync';
-import removeStorage from './removeStorage';
-import removeStorageSync from './removeStorageSync';
-import setStorage from './setStorage';
-import setStorageSync from './setStorageSync';
+export { default as clearStorage } from './clearStorage';
+export { default as clearStorageSync } from './clearStorageSync';
+export { default as getStorage } from './getStorage';
+export { default as getStorageInfo } from './getStorageInfo';
+export { default as getStorageInfoSync } from './getStorageInfoSync';
+export { default as getStorageSync } from './getStorageSync';
+export { default as removeStorage } from './removeStorage';
+export { default as removeStorageSync } from './removeStorageSync';
+export { default as setStorage } from './setStorage';
+export { default as setStorageSync } from './setStorageSync';
 
 // 网络
-import uploadFile from './uploadFile';
-import downloadFile from './downloadFile';
+export { default as uploadFile } from './uploadFile';
+export { default as downloadFile } from './downloadFile';
 
 // canIUse
-import canIUse from './canIUse';
+export { default as canIUse } from './canIUse';
 
 // 获取基础库版本号
-import sdkVersion from './sdkVersion';
+export { default as sdkVersion } from './sdkVersion';
 
 // 系统信息
-import getSystemInfoSync from './getSystemInfoSync';
-import getSystemInfo from './getSystemInfo';
+export { default as getSystemInfoSync } from './getSystemInfoSync';
+export { default as getSystemInfo } from './getSystemInfo';
 
 // 网络状态
-import getNetworkType from './getNetworkType';
-import onNetworkStatusChange from './onNetworkStatusChange';
-import offNetworkStatusChange from './offNetworkStatusChange';
+export { default as getNetworkType } from './getNetworkType';
+export { default as onNetworkStatusChange } from './onNetworkStatusChange';
+export { default as offNetworkStatusChange } from './offNetworkStatusChange';
 
 // 剪切板
-import setClipboard from './setClipboard';
-import getClipboard from './getClipboard';
+export { default as setClipboard } from './setClipboard';
+export { default as getClipboard } from './getClipboard';
 
 // 获取服务器时间
-import getServerTime from './getServerTime';
+export { default as getServerTime } from './getServerTime';
 
 // 用户授权
-import authorize from './authorize';
-import cleanToken from './cleanToken';
-import showSubAccountAuth from './showSubAccountAuth';
+export { default as authorize } from './authorize';
+export { default as cleanToken } from './cleanToken';
+export { default as showSubAccountAuth } from './showSubAccountAuth';
 
 // 获取授权用户信息
-import getAuthUserInfo from './getAuthUserInfo';
+export { default as getAuthUserInfo } from './getAuthUserInfo';
 
 // IM 功能
-import openChat from './openChat';
-import imGetActiveUser from './imGetActiveUser';
+export { default as openChat } from './openChat';
+export { default as imGetActiveUser } from './imGetActiveUser';
 
 // 打开千牛组件
-import openPlugin from './openPlugin';
-import openCategory from './openCategory';
-import changePrice from './changePrice';
+export { default as openPlugin } from './openPlugin';
+export { default as openCategory } from './openCategory';
+export { default as changePrice } from './changePrice';
 
 // 小程序跳转
-import navigateToMiniProgram from './navigateToMiniProgram';
+export { default as navigateToMiniProgram } from './navigateToMiniProgram';
 
 // 退出当前小程序
-import exit from './exit';
+export { default as exit } from './exit';
 
 // webview组件控制
-import createWebViewContext from './createWebViewContext';
+export { default as createWebViewContext } from './createWebViewContext';
 
 // 数据安全
-import rsa from './rsa';
+export { default as rsa } from './rsa';
 
 // 小程序当前运行版本类型
-import getRunScene from './getRunScene';
+export { default as getRunScene } from './getRunScene';
 
 // 自定义分析
-import reportAnalytics from './reportAnalytics';
+export { default as reportAnalytics } from './reportAnalytics';
 
 // 模板实例化
-import getExtConfig from './getExtConfig';
-import getExtConfigSync from './getExtConfigSync';
-
-export {
-  // 应用级事件
-  onAppShow,
-  offAppShow,
-  onAppHide,
-  offAppHide,
-  onError,
-  offError,
-  onWindowResized,
-  // 路由
-  switchTab,
-  reLaunch,
-  redirectTo,
-  navigateTo,
-  navigateBack,
-  navigateToWebPage,
-  navigateToQAP,
-  closeQAP,
-  // TabBar
-  showTabBar,
-  hideTabBar,
-  setTabBarItem,
-  showTabBarRedDot,
-  hideTabBarRedDot,
-  setTabBarBadge,
-  removeTabBarBadge,
-  switchTabEx,
-  showTabEx,
-  hideTabEx,
-  showTabBarRedDotEx,
-  hideTabBarRedDotEx,
-  setTabBarBadgeEx,
-  removeTabBarBadgeEx,
-  // 交互反馈
-  alert,
-  confirm,
-  showToast,
-  hideToast,
-  showLoading,
-  hideLoading,
-  // 动画
-  createAnimation,
-  // 画布
-  createCanvasContext,
-  // 图片
-  chooseImage,
-  compressImage,
-  saveImage,
-  previewImage,
-  getImageInfo,
-  // 视频
-  createVideoContext,
-  // 音频
-  createInnerAudioContext,
-  // 数据库,
-  queryDBSize,
-  database,
-  onDatabaseLimitWarning,
-  onDatabaseLimitDebug,
-  // 文件
-  getFileInfo,
-  saveFile,
-  getSavedFileInfo,
-  getSavedFileList,
-  removeSavedFile,
-  chooseFile,
-  chooseFileAndGetContent,
-  saveFileToDisk,
-  // 缓存
-  clearStorage,
-  clearStorageSync,
-  getStorage,
-  getStorageInfo,
-  getStorageInfoSync,
-  getStorageSync,
-  removeStorage,
-  removeStorageSync,
-  setStorage,
-  setStorageSync,
-  // 网络
-  uploadFile,
-  downloadFile,
-  // canIUse
-  canIUse,
-  // 获取基础库版本号
-  sdkVersion,
-  // 系统信息
-  getSystemInfoSync,
-  getSystemInfo,
-  // 网络状态
-  getNetworkType,
-  onNetworkStatusChange,
-  offNetworkStatusChange,
-  // 剪贴板
-  setClipboard,
-  getClipboard,
-  // 获取服务器时间
-  getServerTime,
-  // 用户授权
-  authorize,
-  cleanToken,
-  showSubAccountAuth,
-  // 获取授权用户信息
-  getAuthUserInfo,
-  // IM 功能
-  openChat,
-  imGetActiveUser,
-  // 打开千牛组件
-  openPlugin,
-  openCategory,
-  changePrice,
-  // 小程序跳转
-  navigateToMiniProgram,
-  // 退出当前小程序
-  exit,
-  // webview组件控制
-  createWebViewContext,
-  // 数据安全
-  rsa,
-  // 小程序当前运行版本类型
-  getRunScene,
-  // 自定义分析
-  reportAnalytics,
-  // 模板实例化
-  getExtConfig,
-  getExtConfigSync,
-};
+export { default as getExtConfig } from './getExtConfig';
+export { default as getExtConfigSync } from './getExtConfigSync';

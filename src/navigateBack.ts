@@ -1,7 +1,7 @@
-import { createPromiseApi } from './utils/createPromiseApi';
+import invokeAsyncApi from './utils/invokeAsyncApi';
 /**
  * 关闭当前页面，返回上一级或多级页面
  */
 export default function navigateBack(options: { delta: number }): Promise<{ success: boolean }> {
-  return createPromiseApi('navigateBack')(options);
+  return invokeAsyncApi('navigateBack', options);
 }

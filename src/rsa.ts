@@ -1,4 +1,4 @@
-import { createPromiseApi } from './utils/createPromiseApi';
+import invokeAsyncApi from './utils/invokeAsyncApi';
 
 /**
  * 非对称加密
@@ -6,5 +6,5 @@ import { createPromiseApi } from './utils/createPromiseApi';
 export default function rsa(options: { action: string; text: string; key: string }): Promise<{
   text: string;
 }> {
-  return createPromiseApi('rsa')(options);
+  return invokeAsyncApi('rsa', options);
 }

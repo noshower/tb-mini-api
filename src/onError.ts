@@ -1,8 +1,8 @@
-import assertCanIUse from './utils/assertCanIUse';
+import invokeCallbackApi from './utils/invokeCallbackApi';
+
 /**
  * 监听小程序错误事件
  */
 export default function onError(callback: (error: string) => void) {
-  assertCanIUse('onError');
-  return my.onError(callback);
+  return invokeCallbackApi('onError', callback);
 }

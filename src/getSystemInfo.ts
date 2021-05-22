@@ -1,4 +1,4 @@
-import { createPromiseApi } from './utils/createPromiseApi';
+import invokeAsyncApi from './utils/invokeAsyncApi';
 
 /**
  * 获取手机系统信息
@@ -22,5 +22,5 @@ export default function getSystemInfo(): Promise<{
   fontSizeSetting: number;
   app: string;
 }> {
-  return createPromiseApi('getSystemInfo')();
+  return invokeAsyncApi('getSystemInfo');
 }

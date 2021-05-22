@@ -1,4 +1,4 @@
-import { createPromiseApi } from './utils/createPromiseApi';
+import invokeAsyncApi from './utils/invokeAsyncApi';
 
 /**
  * 获取保存的所有文件信息
@@ -6,5 +6,5 @@ import { createPromiseApi } from './utils/createPromiseApi';
 export default function getSavedFileList(): Promise<{
   fileList: { size: number; createTime: number; apFilePath: string }[];
 }> {
-  return createPromiseApi('getSavedFileList')();
+  return invokeAsyncApi('getSavedFileList');
 }

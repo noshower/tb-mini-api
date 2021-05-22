@@ -1,3 +1,5 @@
+import invokeSyncApi from './utils/invokeSyncApi';
+
 interface ICanvasToTempFilePathOptions {
   /**
    * 画布 x 轴起点，默认为 0
@@ -317,5 +319,5 @@ interface ICanvasContext {
  * 创建 canvas 绘图上下文
  */
 export default function createCanvasContext(canvasId: string): ICanvasContext {
-  return my.createCanvasContext(canvasId);
+  return invokeSyncApi('createCanvasContext', canvasId);
 }

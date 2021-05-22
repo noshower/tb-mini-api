@@ -1,4 +1,4 @@
-import { createPromiseApi } from './utils/createPromiseApi';
+import invokeAsyncApi from './utils/invokeAsyncApi';
 
 /**
  * 获取文件信息
@@ -7,5 +7,5 @@ export default function getFileInfo(options: { apFilePath: string; digestAlgorit
   size: number;
   createTime: number;
 }> {
-  return createPromiseApi('getFileInfo')(options);
+  return invokeAsyncApi('getFileInfo', options);
 }

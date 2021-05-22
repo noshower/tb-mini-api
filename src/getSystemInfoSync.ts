@@ -1,3 +1,5 @@
+import invokeSyncApi from './utils/invokeSyncApi';
+
 /**
  * 获取手机系统信息的同步接口
  */
@@ -20,5 +22,5 @@ export default function getSystemInfoSync(): {
   fontSizeSetting: number;
   app: string;
 } {
-  return my.getSystemInfoSync();
+  return invokeSyncApi('getSystemInfoSync');
 }

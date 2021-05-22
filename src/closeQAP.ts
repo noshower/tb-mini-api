@@ -1,7 +1,7 @@
-import { createPromiseApi } from './utils/createPromiseApi';
+import invokeAsyncApi from './utils/invokeAsyncApi';
 /**
  * 关闭插件页面
  */
 export default function closeQAP(): Promise<{ success: boolean }> {
-  return createPromiseApi('qn.closeQAP')();
+  return invokeAsyncApi('qn.closeQAP');
 }

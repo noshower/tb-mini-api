@@ -1,4 +1,4 @@
-import { createPromiseApi } from './utils/createPromiseApi';
+import invokeAsyncApi from './utils/invokeAsyncApi';
 
 type SizeType = 'original' | 'compressed';
 type SourceType = 'camera' | 'album';
@@ -11,5 +11,5 @@ export default function chooseImage(options?: {
   sizeType?: SizeType | SizeType[];
   sourceType?: SourceType | SourceType[];
 }): Promise<{ apFilePaths: string[]; compressLevel: number; tempFilePaths: string[] }> {
-  return createPromiseApi('chooseImage')(options);
+  return invokeAsyncApi('chooseImage', options);
 }

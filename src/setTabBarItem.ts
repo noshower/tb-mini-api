@@ -1,4 +1,4 @@
-import { createPromiseApi } from './utils/createPromiseApi';
+import invokeAsyncApi from './utils/invokeAsyncApi';
 
 /**
  * 动态设置 tabBar 某一项的内容
@@ -9,5 +9,5 @@ export default function setTabBarItem(options: {
   iconPath: string;
   selectedIconPath: string;
 }): Promise<{ success: boolean }> {
-  return createPromiseApi('setTabBarItem')(options);
+  return invokeAsyncApi('setTabBarItem', options);
 }

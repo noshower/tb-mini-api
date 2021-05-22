@@ -1,8 +1,8 @@
-import { createPromiseApi } from './utils/createPromiseApi';
+import invokeAsyncApi from './utils/invokeAsyncApi';
 
 /**
  * 隐藏 tabBar
  */
 export default function hideTabBar(options?: { animation: boolean }): Promise<{ success: boolean }> {
-  return createPromiseApi('hideTabBar')(options);
+  return invokeAsyncApi('hideTabBar', options);
 }

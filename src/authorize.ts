@@ -1,4 +1,4 @@
-import { createPromiseApi } from './utils/createPromiseApi';
+import invokeAsyncApi from './utils/invokeAsyncApi';
 
 /**
  * 发起用户授权
@@ -8,5 +8,5 @@ export default function authorize(options: { scopes: string }): Promise<{
   // accessToken: string;
   //  authErrorScope: Error
 }> {
-  return createPromiseApi('authorize')(options);
+  return invokeAsyncApi('authorize', options);
 }

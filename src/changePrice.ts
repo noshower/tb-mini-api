@@ -1,8 +1,8 @@
-import { createPromiseApi } from './utils/createPromiseApi';
+import invokeAsyncApi from './utils/invokeAsyncApi';
 
 /**
  * 千牛提供更改商品价格的能力
  */
 export default function changePrice(options: { tid: string }): Promise<{ success: boolean }> {
-  return createPromiseApi('qn.changePrice')(options);
+  return invokeAsyncApi('qn.changePrice', options);
 }

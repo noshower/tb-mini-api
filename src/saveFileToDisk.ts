@@ -1,8 +1,8 @@
-import { createPromiseApi } from './utils/createPromiseApi';
+import invokeAsyncApi from './utils/invokeAsyncApi';
 
 /**
  * 保存文件到磁盘
  */
 export default function saveFileToDisk(options: { apFilePath: string; defaultFileName?: string }): Promise<{ success: boolean }> {
-  return createPromiseApi('qn.saveFileToDisk')(options);
+  return invokeAsyncApi('qn.saveFileToDisk', options);
 }

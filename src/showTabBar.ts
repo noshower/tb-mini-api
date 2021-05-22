@@ -1,8 +1,8 @@
-import { createPromiseApi } from './utils/createPromiseApi';
+import invokeAsyncApi from './utils/invokeAsyncApi';
 
 /**
  * 显示 tabBar
  */
 export default function showTabBar(options?: { animation: boolean }): Promise<{ success: boolean }> {
-  return createPromiseApi('showTabBar')(options);
+  return invokeAsyncApi('showTabBar', options);
 }

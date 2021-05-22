@@ -1,4 +1,4 @@
-import { createPromiseApi } from './utils/createPromiseApi';
+import invokeAsyncApi from './utils/invokeAsyncApi';
 
 /**
  * 文件上传
@@ -11,5 +11,5 @@ export default function uploadFile<T = unknown>(options: {
   header: unknown;
   formData: unknown;
 }): Promise<T> {
-  return createPromiseApi('uploadFile')(options);
+  return invokeAsyncApi('uploadFile', options);
 }

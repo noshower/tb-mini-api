@@ -1,8 +1,8 @@
-import { createPromiseApi } from './utils/createPromiseApi';
+import invokeAsyncApi from './utils/invokeAsyncApi';
 
 /**
  * 选择文件
  */
 export default function chooseFile(options: { count?: number; type?: number }): Promise<{ apFilePaths: string[] }> {
-  return createPromiseApi('qn.chooseFile')(options);
+  return invokeAsyncApi('qn.chooseFile', options);
 }

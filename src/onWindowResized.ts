@@ -1,4 +1,4 @@
-import assertCanIUse from './utils/assertCanIUse';
+import invokeCallbackApi from './utils/invokeCallbackApi';
 /**
  * 窗口大小变化
  */
@@ -15,6 +15,5 @@ export default function onWindowResized(
     };
   }) => void
 ) {
-  assertCanIUse('qn.onWindowResized');
-  return my.qn.onWindowResized(callback);
+  return invokeCallbackApi('qn.onWindowResized', callback);
 }

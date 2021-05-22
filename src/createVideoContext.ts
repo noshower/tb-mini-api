@@ -1,3 +1,5 @@
+import invokeSyncApi from './utils/invokeSyncApi';
+
 type F = () => void;
 
 /**
@@ -11,5 +13,5 @@ export default function createVideoContext(videoId: string): Promise<{
   requestFullScreen: (options: { direction: number }) => void;
   exitFullScreen: F;
 }> {
-  return my.createVideoContext(videoId);
+  return invokeSyncApi('createVideoContext', videoId);
 }

@@ -1,4 +1,4 @@
-import { createPromiseApi } from './utils/createPromiseApi';
+import invokeAsyncApi from './utils/invokeAsyncApi';
 
 /**
  * 同步获取模板ext.json中的ext配置
@@ -6,5 +6,5 @@ import { createPromiseApi } from './utils/createPromiseApi';
 export default function getExtConfigSync(): Promise<{
   data: unknown;
 }> {
-  return createPromiseApi('getExtConfigSync')();
+  return invokeAsyncApi('getExtConfigSync');
 }

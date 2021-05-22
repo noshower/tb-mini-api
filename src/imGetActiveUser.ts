@@ -1,4 +1,4 @@
-import { createPromiseApi } from './utils/createPromiseApi';
+import invokeAsyncApi from './utils/invokeAsyncApi';
 
 /**
  * 获取当前IM旺旺联系人
@@ -6,5 +6,5 @@ import { createPromiseApi } from './utils/createPromiseApi';
 export default function imGetActiveUser(): Promise<{
   user_nick: string;
 }> {
-  return createPromiseApi('qn.imGetActiveUser')();
+  return invokeAsyncApi('qn.imGetActiveUser');
 }

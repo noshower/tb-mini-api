@@ -1,8 +1,8 @@
-import { createPromiseApi } from './utils/createPromiseApi';
+import invokeAsyncApi from './utils/invokeAsyncApi';
 
 /**
  * 隐藏左侧导航栏中指定的菜单项
  */
 export default function hideTabEx(options: { id: string }): Promise<{ success: boolean }> {
-  return createPromiseApi('qn.hideTabEx')(options);
+  return invokeAsyncApi('qn.hideTabEx', options);
 }

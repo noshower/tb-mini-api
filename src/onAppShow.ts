@@ -1,8 +1,8 @@
-import assertCanIUse from './utils/assertCanIUse';
+import invokeCallbackApi from './utils/invokeCallbackApi';
+
 /**
  * 监听小程序切前台事件
  */
 export default function onAppShow(callback: () => void) {
-  assertCanIUse('onAppShow');
-  return my.onAppShow(callback);
+  return invokeCallbackApi('onAppShow', callback);
 }

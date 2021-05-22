@@ -1,8 +1,8 @@
-import { createPromiseApi } from './utils/createPromiseApi';
+import invokeAsyncApi from './utils/invokeAsyncApi';
 
 /**
  * 清除三方授权token
  */
 export default function cleanToken(): Promise<{ success: boolean }> {
-  return createPromiseApi('qn.cleanToken')();
+  return invokeAsyncApi('qn.cleanToken');
 }

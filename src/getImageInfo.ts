@@ -1,4 +1,4 @@
-import { createPromiseApi } from './utils/createPromiseApi';
+import invokeAsyncApi from './utils/invokeAsyncApi';
 
 /**
  * 获取图片信息
@@ -10,5 +10,5 @@ export default function getImageInfo(options: { src: string }): Promise<{
   // orientation: 'up' | 'down' | 'left' | 'right' | 'up-mirrored' | 'down-mirrored' | 'left-mirrored' | 'right-mirrored';
   // type: string;
 }> {
-  return createPromiseApi('getImageInfo')(options);
+  return invokeAsyncApi('getImageInfo', options);
 }
