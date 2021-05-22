@@ -6,6 +6,17 @@ import offAppHide from './offAppHide';
 import onError from './onError';
 import offError from './offError';
 import onWindowResized from './onWindowResized';
+
+// 路由
+import switchTab from './switchTab';
+import reLaunch from './reLaunch';
+import redirectTo from './redirectTo';
+import navigateTo from './navigateTo';
+import navigateBack from './navigateBack';
+import navigateToWebPage from './navigateToWebPage';
+import navigateToQAP from './navigateToQAP';
+import closeQAP from './closeQAP';
+
 // 交互反馈
 import alert from './alert';
 import confirm from './confirm';
@@ -136,6 +147,15 @@ export {
   onError,
   offError,
   onWindowResized,
+  // 路由
+  switchTab,
+  reLaunch,
+  redirectTo,
+  navigateTo,
+  navigateBack,
+  navigateToWebPage,
+  navigateToQAP,
+  closeQAP,
   // 交互反馈
   alert,
   confirm,
