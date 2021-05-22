@@ -17,6 +17,22 @@ import navigateToWebPage from './navigateToWebPage';
 import navigateToQAP from './navigateToQAP';
 import closeQAP from './closeQAP';
 
+// TabBar
+import showTabBar from './showTabBar';
+import hideTabBar from './hideTabBar';
+import setTabBarItem from './setTabBarItem';
+import showTabBarRedDot from './showTabBarRedDot';
+import hideTabBarRedDot from './hideTabBarRedDot';
+import setTabBarBadge from './setTabBarBadge';
+import removeTabBarBadge from './removeTabBarBadge';
+import switchTabEx from './switchTabEx';
+import showTabEx from './showTabEx';
+import hideTabEx from './hideTabEx';
+import showTabBarRedDotEx from './showTabBarRedDotEx';
+import hideTabBarRedDotEx from './hideTabBarRedDotEx';
+import setTabBarBadgeEx from './setTabBarBadgeEx';
+import removeTabBarBadgeEx from './removeTabBarBadgeEx';
+
 // 交互反馈
 import alert from './alert';
 import confirm from './confirm';
@@ -156,6 +172,21 @@ export {
   navigateToWebPage,
   navigateToQAP,
   closeQAP,
+  // TabBar
+  showTabBar,
+  hideTabBar,
+  setTabBarItem,
+  showTabBarRedDot,
+  hideTabBarRedDot,
+  setTabBarBadge,
+  removeTabBarBadge,
+  switchTabEx,
+  showTabEx,
+  hideTabEx,
+  showTabBarRedDotEx,
+  hideTabBarRedDotEx,
+  setTabBarBadgeEx,
+  removeTabBarBadgeEx,
   // 交互反馈
   alert,
   confirm,
