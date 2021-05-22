@@ -6,7 +6,7 @@
     "commit": "git-cz",
     "build": "rollup -c",
     "test": "jest",
-    "prepublish": "npm test"
+    "precommit": "npm test"
   },
   "husky": {
     "hooks": {
