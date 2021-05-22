@@ -1,11 +1,12 @@
 {
   "name": "tb-pc-api",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "使用 Ts 重新定义淘宝PC小程序的api, 并将其改成 Promise 形式",
   "scripts": {
     "commit": "git-cz",
     "build": "rollup -c",
-    "test": "jest"
+    "test": "jest",
+    "prepublish": "npm test"
   },
   "husky": {
     "hooks": {
