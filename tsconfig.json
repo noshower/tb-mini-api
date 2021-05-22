@@ -17,5 +17,5 @@
     "baseUrl": "./",
     "importHelpers": true
   },
-  "include": ["./src/**/*", "global.d.ts"]
+  "include": ["./src/**/*", "global.d.ts", "__tests__/**/*"]
 }
