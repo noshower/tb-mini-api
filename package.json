@@ -6,13 +6,8 @@
     "commit": "git-cz",
     "build": "rollup -c",
     "test": "jest",
-    "precommit": "npm test"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
+    "prepare": "husky install",
+    "pre-commit": "lint-staged && npm test"
   },
   "config": {
     "commitizen": {
@@ -31,6 +26,8 @@
   "devDependencies": {
     "@babel/preset-env": "^7.14.2",
     "@babel/preset-typescript": "^7.13.0",
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
     "@rollup/plugin-babel": "^5.3.0",
     "@rollup/plugin-commonjs": "^18.0.0",
     "@rollup/plugin-node-resolve": "^11.2.1",
